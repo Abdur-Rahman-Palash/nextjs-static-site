@@ -365,12 +365,12 @@ export default function Home() {
                   আয়মান টিচিং হোমে ভর্তি হয়ে আপনার সন্তানের শিক্ষাগত সাফল্য নিশ্চিত করুন
                 </p>
                 <div className="card-actions justify-center">
-                  <button className="btn btn-accent btn-lg px-8">
+                  <Link href="/contact" className="btn btn-accent btn-lg px-8">
                     এখনই যোগাযোগ করুন
-                  </button>
-                  <button className="btn btn-outline btn-accent btn-lg px-8">
+                  </Link>
+                  <Link href="/about" className="btn btn-outline btn-accent btn-lg px-8">
                     আরও জানুন
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -414,7 +414,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="card-actions justify-end">
-                  <button className="btn btn-primary btn-sm">বিস্তারিত জানুন</button>
+                  <Link href="/courses" className="btn btn-primary btn-sm">বিস্তারিত জানুন</Link>
                 </div>
               </div>
             </div>
@@ -442,7 +442,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="card-actions justify-end">
-                  <button className="btn btn-secondary btn-sm">বিস্তারিত জানুন</button>
+                  <Link href="/courses" className="btn btn-secondary btn-sm">বিস্তারিত জানুন</Link>
                 </div>
               </div>
             </div>
@@ -470,7 +470,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="card-actions justify-end">
-                  <button className="btn btn-accent btn-sm">বিস্তারিত জানুন</button>
+                  <Link href="/courses" className="btn btn-accent btn-sm">বিস্তারিত জানুন</Link>
                 </div>
               </div>
             </div>
@@ -498,7 +498,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="card-actions justify-end">
-                  <button className="btn btn-info btn-sm">বিস্তারিত জানুন</button>
+                  <Link href="/courses" className="btn btn-info btn-sm">বিস্তারিত জানুন</Link>
                 </div>
               </div>
             </div>
@@ -526,7 +526,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="card-actions justify-end">
-                  <button className="btn btn-warning btn-sm">বিস্তারিত জানুন</button>
+                  <Link href="/courses" className="btn btn-warning btn-sm">বিস্তারিত জানুন</Link>
                 </div>
               </div>
             </div>

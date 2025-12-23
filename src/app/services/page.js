@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Services() {
   return (
     <div className="min-h-screen py-16 px-4">
@@ -5,7 +7,7 @@ export default function Services() {
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold mb-4">Our Services</h1>
           <p className="text-lg text-base-content/70">
-            Comprehensive educational services designed to meet your learning needs.
+            Comprehensive educational and technical services designed to meet your learning and business needs.
           </p>
         </div>
 
@@ -130,6 +132,47 @@ export default function Services() {
               </ul>
             </div>
           </div>
+
+          <div className="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
+            <div className="card-body">
+              <div className="w-12 h-12 bg-error rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-error-content" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 10h.01M11 10h.01" />
+                </svg>
+              </div>
+              <h3 className="card-title">CC TV Camera Setup & Maintenance</h3>
+              <p className="text-sm text-base-content/70 mb-4">
+                Professional installation and maintenance of CCTV camera systems for security.
+              </p>
+              <ul className="text-sm space-y-1">
+                <li>• System installation</li>
+                <li>• Camera configuration</li>
+                <li>• Maintenance services</li>
+                <li>• 24/7 support</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
+            <div className="card-body">
+              <div className="w-12 h-12 bg-neutral rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-neutral-content" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                </svg>
+              </div>
+              <h3 className="card-title">Software & Website Development</h3>
+              <p className="text-sm text-base-content/70 mb-4">
+                Custom software and website development for educational institutions, restaurants, and businesses.
+              </p>
+              <ul className="text-sm space-y-1">
+                <li>• School/College/Madrasah management</li>
+                <li>• Restaurant POS systems</li>
+                <li>• Shop billing software</li>
+                <li>• Website development</li>
+              </ul>
+            </div>
+          </div>
         </div>
 
         <div className="text-center">
@@ -138,8 +181,8 @@ export default function Services() {
               <h3 className="card-title text-2xl">Ready to Get Started?</h3>
               <p className="mb-4">Contact us today to learn more about our services and how we can help you achieve your educational goals.</p>
               <div className="card-actions justify-center">
-                <button className="btn btn-accent">Contact Us</button>
-                <button className="btn btn-outline btn-accent">View Courses</button>
+                <Link href="/contact" className="btn btn-accent">Contact Us</Link>
+                <Link href="/courses" className="btn btn-outline btn-accent">View Courses</Link>
               </div>
             </div>
           </div>

@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function About() {
   return (
     <div className="min-h-screen py-16 px-4">
@@ -190,9 +192,9 @@ export default function About() {
               পরিচালনা করা হয় যাতে প্রত্যেকে পূর্ণ মনোযোগ পায়।
             </p>
             <div className="card-actions justify-center mt-6">
-              <button className="btn btn-accent btn-lg">
+              <Link href="/contact" className="btn btn-accent btn-lg">
                 যোগাযোগ করুন
-              </button>
+              </Link>
             </div>
           </div>
         </div>

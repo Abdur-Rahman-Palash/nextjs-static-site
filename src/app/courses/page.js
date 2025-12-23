@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Courses() {
   const itCourses = [
     {
@@ -115,8 +117,8 @@ export default function Courses() {
         </ul>
 
         <div className="card-actions justify-end">
-          <button className="btn btn-primary btn-sm">ভর্তি হোন</button>
-          <button className="btn btn-outline btn-primary btn-sm">বিস্তারিত</button>
+          <Link href="/contact" className="btn btn-primary btn-sm">ভর্তি হোন</Link>
+          <Link href="/contact" className="btn btn-outline btn-primary btn-sm">বিস্তারিত</Link>
         </div>
       </div>
     </div>
@@ -205,8 +207,8 @@ export default function Courses() {
                 </div>
 
                 <div className="card-actions justify-end">
-                  <button className="btn btn-secondary btn-lg">ডেমো দেখুন</button>
-                  <button className="btn btn-outline btn-secondary btn-lg">যোগাযোগ করুন</button>
+                  <Link href="/contact" className="btn btn-secondary btn-lg">ডেমো দেখুন</Link>
+                  <Link href="/contact" className="btn btn-outline btn-secondary btn-lg">যোগাযোগ করুন</Link>
                 </div>
               </div>
             </div>
@@ -225,12 +227,12 @@ export default function Courses() {
                 সেরা প্রশিক্ষণ এবং ক্যারিয়ার গাইডেন্স পান।
               </p>
               <div className="card-actions justify-center">
-                <button className="btn btn-accent btn-lg px-8">
+                <Link href="/contact" className="btn btn-accent btn-lg px-8">
                   এখনই ভর্তি হোন
-                </button>
-                <button className="btn btn-outline btn-accent btn-lg px-8">
+                </Link>
+                <Link href="/contact" className="btn btn-outline btn-accent btn-lg px-8">
                   কনসাল্টেশন নিন
-                </button>
+                </Link>
               </div>
             </div>
           </div>
